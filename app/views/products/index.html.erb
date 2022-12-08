@@ -1,0 +1,19 @@
+<h1>Productos</h1>
+
+<!-- 
+    El "=" al introducir codigo ruby indica que la sentencia 
+    se va a imprimir
+-->
+
+<div class= "container-products">
+<% @products.each do  |product| %>
+    <div class="container">
+        <%= link_to product_path(product.id) do %>
+        <div class="content">
+            <h1><%= product.title %></h1>
+            <h3><%= product.price %> </h3>
+        </div>
+    <% end %>
+    </div>    
+<% end %>
+</div>

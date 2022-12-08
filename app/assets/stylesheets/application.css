@@ -1,15 +1,43 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Varela+Round&display=swap');
+
+body {
+  font-family: "Tajawal", Arial;
+}
+
+body {
+    background: #f2f2f2;
+  }
+  
+  .container  {
+    height: 200px;
+    width: 300px;
+    margin-top: 25px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+  }
+  
+  .content {
+    text-align: justify;
+    color: black;
+    padding: 40px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  h1 {
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  p {
+    font-weight: 300;
+  }
+
+  .container-products{
+    padding: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
